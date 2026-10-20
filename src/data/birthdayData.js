@@ -124,7 +124,7 @@ export const birthdayData = {
 
   // Special Message Section
   specialMessage: {
-    badge: "FROM THE HEART",
+
     heading: "A Special Message For You",
     salutation: "",
     paragraphs: [

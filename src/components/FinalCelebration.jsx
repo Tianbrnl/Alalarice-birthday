@@ -28,7 +28,7 @@ export const FinalCelebration = ({ data }) => {
           whileInView={{ scale: 1 }}
           viewport={{ once: true }}
           transition={{ type: 'spring', stiffness: 200, damping: 15 }}
-          className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-gradient-to-tr from-pink-500 via-rose-500 to-purple-600 text-white flex items-center justify-center shadow-xl shadow-pink-500/25 mb-6"
+          className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-gradient-to-r from-sky-500 via-blue-500 to-blue-600 text-white flex items-center justify-center shadow-xl shadow-pink-500/25 mb-6"
         >
           <PartyPopper className="w-8 h-8 sm:w-10 sm:h-10 text-yellow-200" />
         </motion.div>
@@ -41,7 +41,10 @@ export const FinalCelebration = ({ data }) => {
           transition={{ duration: 0.8 }}
           className="text-4xl sm:text-5xl md:text-6xl font-serif font-extrabold text-stone-800 mb-4 tracking-tight leading-tight"
         >
-          {data.celebration.title}
+          Happy Birthday,{' '}
+          <span className="bg-gradient-to-r from-sky-500 via-blue-500 to-blue-600 bg-clip-text text-transparent inline-block">
+            {data.recipientName || 'Alalarice'}!
+          </span>
         </motion.h2>
 
         {/* Subtitle / Wish */}
@@ -78,7 +81,7 @@ export const FinalCelebration = ({ data }) => {
           <button
             onClick={handleCelebrateAgain}
             type="button"
-            className="group inline-flex items-center gap-3 px-8 py-4 rounded-full bg-gradient-to-r from-pink-500 via-rose-500 to-purple-500 text-white font-semibold text-base sm:text-lg shadow-xl shadow-pink-500/30 hover:shadow-2xl hover:shadow-pink-500/40 transition-all min-h-[48px]"
+            className="group inline-flex items-center gap-3 px-8 py-4 rounded-full bg-gradient-to-r from-sky-500 via-blue-600 to-indigo-600 text-white font-semibold text-base sm:text-lg shadow-xl shadow-blue-500/30 hover:shadow-2xl hover:shadow-blue-500/40 transition-all min-h-[48px]"
           >
             <RotateCcw className="w-5 h-5 group-hover:-rotate-90 transition-transform duration-300" />
             <span>{data.celebration.replayButton}</span>
