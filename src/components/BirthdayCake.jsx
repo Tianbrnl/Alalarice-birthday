@@ -244,17 +244,17 @@ export const BirthdayCake = ({ data }) => {
         </div>
 
         {/* Action Controls Bar */}
-        <div className="mt-8 flex flex-wrap items-center justify-center gap-3 sm:gap-4 max-w-xl mx-auto">
+        <div className="mt-8 flex flex-row items-center justify-center gap-2.5 sm:gap-4 max-w-md sm:max-w-xl mx-auto w-full px-3 sm:px-0">
           {candlesLit ? (
             <motion.button
               whileHover={{ scale: 1.04 }}
               whileTap={{ scale: 0.96 }}
               onClick={handleBlowCandles}
               type="button"
-              className="px-6 py-3.5 rounded-full bg-gradient-to-r from-pink-500 to-rose-500 text-white font-medium text-sm sm:text-base shadow-lg shadow-pink-500/25 flex items-center gap-2 hover:shadow-xl transition-all duration-200 min-h-[44px]"
+              className="flex-1 sm:flex-initial max-w-[210px] sm:max-w-none px-3 sm:px-6 py-2.5 sm:py-3.5 rounded-full bg-gradient-to-r from-sky-500 via-blue-500 to-blue-600 text-white font-medium text-xs sm:text-base shadow-lg shadow-blue-500/25 flex items-center justify-center gap-1.5 sm:gap-2 hover:shadow-xl transition-all duration-200 min-h-[44px] cursor-pointer"
             >
-              <Wind className="w-5 h-5 animate-pulse" />
-              <span>Blow Out the Candles</span>
+              <Wind className="w-4 h-4 sm:w-5 sm:h-5 shrink-0 animate-pulse" />
+              <span className="whitespace-nowrap">Blow Out <span className="hidden sm:inline">the Candles</span></span>
             </motion.button>
           ) : (
             <motion.button
@@ -262,10 +262,10 @@ export const BirthdayCake = ({ data }) => {
               whileTap={{ scale: 0.96 }}
               onClick={handleRelight}
               type="button"
-              className="px-6 py-3.5 rounded-full bg-gradient-to-r from-amber-500 to-orange-500 text-white font-medium text-sm sm:text-base shadow-lg shadow-amber-500/25 flex items-center gap-2 hover:shadow-xl transition-all duration-200 min-h-[44px]"
+              className="flex-1 sm:flex-initial max-w-[210px] sm:max-w-none px-3 sm:px-6 py-2.5 sm:py-3.5 rounded-full bg-gradient-to-r from-amber-500 to-orange-500 text-white font-medium text-xs sm:text-base shadow-lg shadow-amber-500/25 flex items-center justify-center gap-1.5 sm:gap-2 hover:shadow-xl transition-all duration-200 min-h-[44px] cursor-pointer"
             >
-              <Flame className="w-5 h-5 text-yellow-200" />
-              <span>Relight Candles</span>
+              <Flame className="w-4 h-4 sm:w-5 sm:h-5 shrink-0 text-yellow-200" />
+              <span className="whitespace-nowrap">Relight <span className="hidden sm:inline">Candles</span></span>
             </motion.button>
           )}
 
@@ -275,10 +275,10 @@ export const BirthdayCake = ({ data }) => {
             whileTap={{ scale: 0.96 }}
             onClick={() => setShowWishModal(true)}
             type="button"
-            className="glass-pill px-6 py-3.5 rounded-full text-stone-700 hover:text-pink-600 font-medium text-sm sm:text-base shadow-sm hover:shadow-md border border-pink-200 flex items-center gap-2 transition-all duration-200 min-h-[44px]"
+            className="flex-1 sm:flex-initial max-w-[210px] sm:max-w-none glass-pill px-3 sm:px-6 py-2.5 sm:py-3.5 rounded-full text-stone-700 hover:text-pink-600 font-medium text-xs sm:text-base shadow-sm hover:shadow-md border border-pink-200 flex items-center justify-center gap-1.5 sm:gap-2 transition-all duration-200 min-h-[44px] cursor-pointer"
           >
-            <Wand2 className="w-5 h-5 text-pink-500" />
-            <span>{wishConfirmed ? '✨ Wish Made!' : 'Make a Wish'}</span>
+            <Wand2 className="w-4 h-4 sm:w-5 sm:h-5 shrink-0 text-pink-500" />
+            <span className="whitespace-nowrap">{wishConfirmed ? '✨ Wish Made!' : 'Make a Wish'}</span>
           </motion.button>
         </div>
 

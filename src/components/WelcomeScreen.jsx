@@ -45,7 +45,7 @@ export const WelcomeScreen = ({ data, onExplore }) => {
           <div className="text-center sm:text-left flex flex-col justify-center max-w-xl">
             <h1 className="text-4xl xs:text-5xl sm:text-5xl md:text-6xl lg:text-7xl font-serif font-bold text-stone-800 tracking-tight leading-[1.12]">
               {data.welcome.title}{' '}
-              <span className="bg-gradient-to-r from-pink-500 via-rose-500 to-purple-600 bg-clip-text text-transparent drop-shadow-sm inline-block">
+              <span className="bg-gradient-to-r from-sky-500 via-blue-500 to-blue-600 bg-clip-text text-transparent drop-shadow-sm inline-block">
                 {data.recipientName}!
               </span>
             </h1>
@@ -88,7 +88,7 @@ export const WelcomeScreen = ({ data, onExplore }) => {
           <button
             onClick={handleOpenSurprise}
             type="button"
-            className="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full bg-gradient-to-r from-pink-500 via-rose-500 to-purple-500 text-white font-semibold text-base sm:text-lg shadow-xl shadow-pink-500/25 hover:shadow-2xl hover:shadow-pink-500/40 transition-all duration-300 min-h-[48px] focus:outline-none focus:ring-4 focus:ring-pink-300"
+            className="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full bg-gradient-to-r from-sky-500 via-blue-600 to-indigo-600 text-white font-semibold text-base sm:text-lg shadow-xl shadow-blue-500/25 hover:shadow-2xl hover:shadow-blue-500/40 transition-all duration-300 min-h-[48px] focus:outline-none focus:ring-4 focus:ring-blue-300"
           >
             <Heart className="w-5 h-5 text-white fill-white group-hover:scale-125 transition-transform duration-300" />
             <span>{data.welcome.ctaButton}</span>
