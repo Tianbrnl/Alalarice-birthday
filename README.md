@@ -1,16 +1,22 @@
-# React + Vite
+A personalized, interactive birthday website created  animations, special messages, and memorable moments. Designed as a little digital gift with a dreamy aesthetic and a responsive experience across mobile phones, tablets, and desktop screens.
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+✨ Features
 
-Currently, two official plugins are available:
+🎀 Animated Welcome Screen — A personalized birthday greeting with a beautiful design.
+🎞️ Animated Avatar — A 2D animated birthday avatar featured beside the birthday greeting.
+🎂 Interactive Birthday Cake — Celebrate with animated candles and a birthday wish.
+💌 Personalized Birthday Letter — A heartfelt message created especially for Alalarice.
+📸 Memory Gallery — A collection of special moments and memories.
+🎮 Roblox Memories — Captions celebrating virtual adventures and moments spent playing together.
+🎁 Interactive Gift Surprise — A virtual gift experience with animations.
+🎉 Celebration Effects — Confetti, floating decorations, and smooth transitions.
+📱 Responsive Design — Optimized for mobile phones, tablets, and desktop screens.
+🎵 Optional Background Music — A more immersive birthday experience, if configured.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+🛠️ Built With
+React — Component-based user interface.
+Vite — Development server and build tool.
+Tailwind CSS — Responsive styling.
+Motion for React — Smooth animations and transitions.
+Canvas Confetti — Celebration effects.
+Lucide React — Icons.
